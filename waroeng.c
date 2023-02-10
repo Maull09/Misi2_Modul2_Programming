@@ -122,13 +122,18 @@ int main() {
                 int jumlah_beli;
                 scanf("%d", &jumlah_beli);
                 if (jumlah_beli > stat_menu[pilih_menu][1]){
-                  printf("Mohon maaf stok tidak memenuhi, apakah ingin mengganti menu (1) atau mengganti jumlah (2) ?\n");
+                  printf("Mohon maaf stok tidak memenuhi, apakah ingin mengganti menu (1) atau mengganti jumlah (2) ? atau ingin keluar warung (3)\n");
                   int pilih;
-                  scanf("%d", pilih);
+                  scanf("%d", &pilih);
                   if (pilih == 1){
                     stok = 0;
-                  } else {
+                    lagi_milih = 1;
+                  } else if (pilih == 2){
                     stok = 1;
+                  } else {
+                    stok = 0;
+                    lagi_milih = 0;
+                    balik = 0;
                   }
                 } else {
                     keranjang[id_pelanggan][pilih_menu][1] += jumlah_beli;
@@ -137,8 +142,17 @@ int main() {
                     lagi_milih = 0;
                 }
               } else {
-                printf("Mohon maaf stok menu tersebut habis, silahkan ganti menu\n");
-                stok = 0;
+                printf("Mohon maaf stok menu tersebut habis, ingin ganti menu (1) atau keluar warung (2) ?\n");
+                int lanjut;
+                scanf("%d", &lanjut);
+                if (lanjut == 1){
+                  stok = 0;
+                } else {
+                  stok = 0;
+                  lagi_milih = 0;
+                  balik = 0;
+                }
+                
               }
             }
           }   

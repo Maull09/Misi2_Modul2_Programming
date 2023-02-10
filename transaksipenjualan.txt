@@ -1,9 +1,5 @@
-Nama pelanggan : mawul
-Nama Menu	Jumlah beli	Harga
-Ayam goreng 	1		6000
-Nama pelanggan : iwan
+Nama pelanggan : m
 Nama Menu	Jumlah beli	Harga
 Indomie rebus	2		10000
-Nama pelanggan : kika
+Nama pelanggan : l
 Nama Menu	Jumlah beli	Harga
-Kopi susu	1		2000
