@@ -1,5 +1,0 @@
-Nama pelanggan : m
-Nama Menu	Jumlah beli	Harga
-Indomie rebus	2		10000
-Nama pelanggan : l
-Nama Menu	Jumlah beli	Harga

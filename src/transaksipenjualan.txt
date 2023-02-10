@@ -1,0 +1,3 @@
+Nama pelanggan : m
+Nama Menu	Jumlah beli	Harga
+Ayam geprek	2		14000

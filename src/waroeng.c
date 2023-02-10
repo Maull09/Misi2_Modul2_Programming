@@ -9,7 +9,7 @@ int main();
 
 int stat_menu[11][3] = {{0, 0, 0}, {1, 10, 7000}, {2, 10, 3000}, {3, 10, 6000}, {4, 10, 5000}, {5, 10, 3000}, {6, 10, 2000}, {7, 10, 3000}, {8, 10, 1500}, {9, 10, 5000}, {10, 10, 1000} };
 char nama_menu[11][20] = {
-  "null"
+  "null",
   "Ayam geprek",
   "Indomie goreng",
   "Ayam bakar",
@@ -173,7 +173,7 @@ void menu_makanan(){
   printf("Makanan\n");
   int i;
   printf("ID Menu\t\tNama Menu\t\tHarga Menu\t\tStok\n");
-  for (i = 1; i < 5; i++) {
+  for (i = 1; i < 6; i++) {
     printf("%d\t\t%s\t\t%d\t\t%d\n", stat_menu[i][0], nama_menu[i], stat_menu[i][2], stat_menu[i][1]);
   }
 }
@@ -183,7 +183,7 @@ void menu_minuman(){
   printf("Minuman\n");
   int i;
   printf("ID Menu\t\tNama Menu\t\tHarga Menu\tStok\n");
-  for (i = 6; i < 10; i++) {
+  for (i = 6; i < 11; i++) {
     printf("%d\t\t%s\t\t%d\t\t%d\n", stat_menu[i][0], nama_menu[i], stat_menu[i][2], stat_menu[i][1]);
   }
 }
